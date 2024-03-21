@@ -2,6 +2,7 @@ from random import choice
 from turtle import *
 from freegames import floor, vector
 
+# Se inicia el state (diccionario)
 state = {'score': 0}
 path = Turtle(visible=False)
 writer = Turtle(visible=False)
@@ -36,6 +37,7 @@ tiles = [
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 ]
 
+# Funcion ...
 def square(x, y):
     "Draw square using path at (x, y)."
     path.up()
