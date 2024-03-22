@@ -3,7 +3,7 @@
    Modificaciones:
     - Contar y desplegar el numero de taps
     - Detectar cuando todos los cuadros se han destapado
-    - Central el dígito en el cuadro
+    - Centrar el dígito en el cuadro
     - Utilizar algo diferente a los dígitos para resolver el juego
 """
 
