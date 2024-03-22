@@ -5,10 +5,57 @@ Este proyecto tiene como objetivo desarrollar pequeños juegos utilizando Python
 - Edición, compilación y ejecución de programas desde la línea de comando
 - Uso de herramientas para control de versiones de código
 
-## Pre-requisitos
+## 📋 Pre-requisitos 
+- **Python 3.X** <br>
+  - **Windows**:\
+     Descargar python 3.X desde https://www.python.org/downloads/
 
+  - **macOS**:\
+    Se puede instalar utilizando [Homebrew](https://brew.sh/) ejecutando el siguiente comando en la terminal:
+    ```
+    brew install python3
+    ```
+    
+  - **Linux**:\
+    Se puede instalar a través del gestor de paquetes de la distribución:
+    ```
+    sudo apt-get update
+    sudo apt-get install python3
+    ```
 
-## Modificaciones realizadas
+  📝La instalación de Python 3 generlamente incluye pip automáticamente.
+<br></br>
+- **pip instalado**\
+  pip es una herramienta que facilita la instalación de paquetes y bibliotecas de Python.  
+  Para verificar si pip está instalado, ejecutar el siguiente comando en la terminal:
+  ```
+  python -m pip --version
+  ```
+  Si está instalado, se observará la información sobre la versión instalada.
+<br></br>
+- **Libreria 'freegames'**\
+  Una vez ya instalado el pip, se puede instalar las bibliotecas de Python necesarias.
+  
+  **Freegames**: Esta biblioteca proporciona un conjunto de juegos simples para aprender a programar en Python.\
+  Se puede instalar utilizando el siguiente comando en la terminal:
+  ```
+  pip install freegames
+  ```
+  Para consultar su contenido:
+  ```
+  python3 -m freegames list
+  ```
+  Para jugar cualquiera de los juegos desde la terminal:
+  ```
+  python3 -m freegames.snake
+  ```
+  Para modificar y correr juego:
+  ```
+  python3 -m freegames copy snake
+  python3 snake.py
+  ```
+
+## 💻 Modificaciones realizadas 
 ### Juego Pintando
 - Agregar un color nuevo
 - Dibujar un circulo, rectangulo y triangulo
@@ -32,6 +79,6 @@ Este proyecto tiene como objetivo desarrollar pequeños juegos utilizando Python
 - Centrar el dígito en el cuadro
 - Utilizar algo diferente a los dígitos para resolver el juego
 
-## Autores
+## 🖋️Autores
 - Andrea Elizabeth Román Varela
 - Min Che Kim
