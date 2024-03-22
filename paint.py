@@ -1,5 +1,8 @@
 """
    Actividad 1. Juego Pintando
+   Modificaciones:
+    - Agregar un color nuevo
+    - Dibujar un circulo, rectangulo y triangulo
 """
 
 from turtle import *
