@@ -9,11 +9,24 @@
 from turtle import *
 from random import randrange
 from freegames import square, vector
+import random
 
 # Inicializar variables
 food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
+
+# Indicar colores
+color = ['green', 'blue', 'black', 'purple', 'orange']
+c1 = random.randint(0,4)
+c2 = random.randint(0,4)
+
+snake_c = color[c1]
+food_c = color[c2]
+
+if snake_c == food_c:
+    snake_c = color[2]
+    food_c = color[0]
 
 # Funcion para cambiar de direccion
 def change(x, y):
@@ -25,6 +38,22 @@ def change(x, y):
 def inside(head):
     "Detecta si la cabeza de ls serpiente esta dentro de los limites del tablero."
     return -200 < head.x < 190 and -200 < head.y < 190
+
+# Funcion para mover la comida
+def move_food():
+    "Mueve la comida un paso al azar sin salirse de la ventana."
+    food.x += randrange(-1, 2) * 10
+    food.y += randrange(-1, 2) * 10
+    if not inside(food):
+        if food.x < -190:
+            food.x = -180
+        elif food.x > 180:
+            food.x = 170
+        if food.y < -190:
+            food.y = -180
+        elif food.y > 180:
+            food.y = 170
+    ontimer(move_food, 1500)
 
 # Funcion para mover al serpiente
 def move():
@@ -45,6 +74,7 @@ def move():
         print('Snake:', len(snake))
         food.x = randrange(-15, 15) * 10
         food.y = randrange(-15, 15) * 10
+        
     else:
         snake.pop(0)
 
@@ -52,9 +82,9 @@ def move():
 
     # Dibujar la serpiente y la comida 
     for body in snake:
-        square(body.x, body.y, 9, 'black')
+        square(body.x, body.y, 9, snake_c)
 
-    square(food.x, food.y, 9, 'green')
+    square(food.x, food.y, 9, food_c)
     update()
     ontimer(move, 100)
 
@@ -72,4 +102,5 @@ onkey(lambda: change(0, -10), 'Down')
 
 # Iniciar el movimiento de la serpiente
 move()
+move_food()
 done()
