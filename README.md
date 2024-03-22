@@ -1,11 +1,12 @@
-# Proyecto
+# ![Logo del freegames](https://pypi.org/static/images/logo-small.2a411bc6.svg) Proyecto - Desarrollo de videojuegos en Python
+Este proyecto tiene como objetivo desarrollar pequeños juegos utilizando Python y la librería Turtle. A través de este proyecto, aprenderemos a utilizar herramientas computacionales útiles, como:
+- Uso de terminales para controlar tu computadora
+- Instalación de software desde la línea de comando
+- Edición, compilación y ejecución de programas desde la línea de comando
+- Uso de herramientas para control de versiones de código
 
-## 
-What the project does
-Why the project is useful
-How users can get started with the project
-Where users can get help with your project
-Who maintains and contributes to the project
+## Pre-requisitos
+
 
 ## Modificaciones realizadas
 ### Juego Pintando
@@ -28,6 +29,9 @@ Who maintains and contributes to the project
 ### Juego de Memoria
 - Contar y desplegar el numero de taps
 - Detectar cuando todos los cuadros se han destapado
-- Central el dígito en el cuadro
+- Centrar el dígito en el cuadro
 - Utilizar algo diferente a los dígitos para resolver el juego
-## 
+
+## Autores
+- Andrea Elizabeth Román Varela
+- Min Che Kim
