@@ -54,7 +54,7 @@ Este proyecto tiene como objetivo desarrollar pequeños juegos utilizando Python
   python3 -m freegames copy snake
   python3 snake.py
   ```
-
+<br></br>
 ## 💻 Modificaciones realizadas 
 ### Juego Pintando
 - Agregar un color nuevo
